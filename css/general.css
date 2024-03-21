@@ -144,7 +144,7 @@ html {
 
 .description-intro {
     font-family: 'InterLight', sans-serif;
-    line-height: 1.5;;
+    line-height: 1.5;
     padding-left: 14px;
     padding-right: 14px;
     margin-bottom: 30px;
@@ -153,23 +153,27 @@ html {
 
 
 /*project 1 and 2--diner*/
+.mobile,
 .diner {
     padding-left: 14px;
     padding-right: 14px;
 }
 
+.mobile h2,
 .diner h2 {
     font-family: 'RalewaySemiBold', sans-serif;
     margin-bottom: 0px;
     margin-top: 30px;
 }
 
+.mobile p,
 .diner p {
     font-family: 'InterLight', sans-serif;
     margin-bottom: 0px;
     margin-top: 5px;
 }
 
+.mobile-homepage,
 .diner-homepage {
     max-width: 100%; /* Ensure image doesn't exceed its container's width */
     height: auto; /* Maintain aspect ratio */
@@ -180,6 +184,7 @@ html {
 
   /* Small screens (up to 600px) */
 @media (max-width: 600px) {
+    .mobile .mobile-homepage img,
     .diner .diner-homepage img {
       max-width: 100%; /* Reduce image size on small screens */
     }
@@ -187,6 +192,7 @@ html {
 
   /* Medium screens (601px to 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
+    .mobile .mobile-homepage img,
     .diner .diner-homepage img {
       max-width: 60%; /* Reduce image size on medium screens */
     }
@@ -194,6 +200,7 @@ html {
 
   /* Large screens (1025px and above) */
 @media (min-width: 1025px) {
+    .mobile .mobile-homepage img,
     .diner .diner-homepage img {
       max-width: 50%; /* Reduce image size on large screens */
     }
@@ -269,7 +276,7 @@ html {
     }
 }
 
-
+/*footer start*/
 .footer {
     margin-top: 25px;
     background-color: #333;
@@ -328,4 +335,40 @@ html {
         margin-right: auto;
     }
 }
+/*footer end*/
 
+.project-heading {
+    font-family: 'RalewaySemiBold', sans-serif;
+    padding-left: 14px;
+    margin-bottom: -10px;
+}
+
+.project-second-headings {
+    font-family: 'InterLight', sans-serif;
+    font-size: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.project-second-headings p {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.mobilewireframe,
+.project-second-headings .persona {
+    padding-top: 0;
+    max-width: 100%; /* Ensure image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 20px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .mobilewireframe,
+    .project-second-headings .persona {
+        max-width: 100%; /* Reduce image size on smaller screens */
+    }
+}
