@@ -351,14 +351,13 @@ html {
 }
 
 .project-second-headings p {
-    margin-top: -10px;
+    margin-top: -5px;
     margin-bottom: 20px;
     line-height: 1.5;
 }
 
 .mobilewireframe,
 .project-second-headings .persona {
-    padding-top: 0;
     max-width: 100%; /* Ensure image doesn't exceed its container's width */
     height: auto; /* Maintain aspect ratio */
     margin: 0 auto; /* Center the image horizontally */
