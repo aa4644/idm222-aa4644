@@ -494,3 +494,19 @@ img.wide-image {
 .download-button:hover {
     background-color: #435a73; /* Button background color on hover */
 }
+
+.about-description {
+    font-family: 'InterLight', sans-serif;
+    padding-left: 14px;
+    padding-right: 14px;
+    line-height: 30px;
+}
+
+.about-heading {
+    font-size: 13px;
+    font-family: 'RalewaySemiBold', sans-serif;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 10px;
+    margin-bottom: -10px;
+}
