@@ -271,49 +271,62 @@ html {
 
 
 .footer {
+    margin-top: 25px;
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
 }
 
 .left-section {
-    flex: 1;
+    font-family: 'RalewaySemiBold', sans-serif;
+    margin-bottom: 10px;
 }
 
 .right-section {
-    flex: 1;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
 }
 
 .icon-link {
     color: #fff;
-    font-size: 24px;
-    margin-left: 15px;
+    font-size: 30px;
+    padding: 5px;
+    margin: 0 5px;
     text-decoration: none;
 }
 
 .scroll-top-btn {
+    font-size: 30px;
     background-color: transparent;
     color: #fff;
-    border: 1px solid #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin-left: 5px;
 }
 
-.scroll-top-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+@media screen and (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left-section {
+        margin-bottom: 0;
+        margin-right: auto;
+    }
 }
 
-  /* Hide the button by default */
-.scroll-top-btn {
-    display: none;
-}
