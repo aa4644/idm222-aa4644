@@ -423,3 +423,73 @@ img.wide-image {
             grid-column: auto;
         }
     }
+
+.resume-intro {
+    font-family: 'RalewaySemiBold', sans-serif;
+    text-align: center;
+}
+
+.resume-intro h3 {
+    margin: 0;
+    padding-top: 30px;
+}
+
+.resume-intro p {
+    margin: 3px;
+}
+
+.resume-body {
+    margin-right: 14px;
+    margin-left: 14px;
+}
+
+.resume-body h4 {
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-family: 'RalewayBold', sans-serif;
+}
+
+.resume-body h5 {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'RalewaySemiBold', sans-serif;
+}
+
+.resume-body p,
+.resume-body ul,
+.resume-body li {
+    margin-top: 0;
+    font-family: 'RalewayLight', sans-serif;
+}
+
+.resume-body p {
+    margin-top: 1px;
+    line-height: 25px;
+}
+
+.resume-body ul {
+    margin-top: -10px;
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+
+.button-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center; /* Center button horizontally within the container */
+}
+
+.download-button {
+    font-family: 'InterRegular', sans-serif;
+    padding: 12px 20px;
+    background-color: #5f80a5; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default button border */
+    border-radius: 16px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.download-button:hover {
+    background-color: #435a73; /* Button background color on hover */
+}
