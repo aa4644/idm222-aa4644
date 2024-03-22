@@ -201,7 +201,7 @@ html {
 }
 
   /* Large screens (1025px and above) */
-@media (min-width: 1025px) {
+@media only screen and (min-width: 992px) {
     .mobile .mobile-homepage img,
     .diner .diner-homepage img {
       max-width: 50%; /* Reduce image size on large screens */
