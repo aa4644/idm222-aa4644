@@ -383,6 +383,7 @@ html {
     grid-auto-flow: dense;
     gap: 6px;
     padding: 0 14px;
+    padding-bottom: 40px;
 }
 
 img {
