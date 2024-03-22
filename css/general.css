@@ -39,6 +39,7 @@ html {
 
 }
 
+
 /* navigation begins */
 .topnav {
     overflow: hidden;
@@ -180,6 +181,7 @@ html {
     margin: auto 0;
     padding-top: 5px;
     border-radius: 20px;
+    margin-bottom: 10px;
 }
 
   /* Small screens (up to 600px) */
@@ -228,6 +230,7 @@ html {
     padding-top: 5px; /* Add padding to the top */
     border-radius: 20px; /* Add rounded corners to the image */
     filter: brightness(50%); /* Adjust brightness of the image */
+    margin-bottom: 10px;
 }
 
 .photography figcaption,
@@ -278,7 +281,7 @@ html {
 
 /*footer start*/
 .footer {
-    margin-top: 25px;
+    margin-top: auto;
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -495,12 +498,6 @@ img.wide-image {
     background-color: #435a73; /* Button background color on hover */
 }
 
-.about-description {
-    font-family: 'InterLight', sans-serif;
-    padding-left: 14px;
-    padding-right: 14px;
-    line-height: 30px;
-}
 
 .about-heading {
     font-size: 13px;
@@ -509,4 +506,28 @@ img.wide-image {
     padding-right: 14px;
     padding-top: 10px;
     margin-bottom: -10px;
+}
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the height of the viewport */
+    margin: 0;
+}
+
+.about-description {
+    font-family: 'InterLight', sans-serif;
+    padding: 0 20px; /* Add padding to the sides to increase spacing */
+    line-height: 1.5; /* Increase line height for better readability */
+    font-size: 18px; /* Increase font size */
+    text-align: justify; /* Justify text to fill up space more evenly */
+}
+
+@media screen and (min-width: 768px) {
+    .about-heading,
+    .about-description {
+        font-size: 1.5rem;
+        max-width: 800px; /* Limit the maximum width of the text content */
+        margin: 0 auto; /* Center the text content horizontally */
+    }
 }
