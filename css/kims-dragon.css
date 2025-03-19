@@ -1,0 +1,260 @@
+/* General Reset */
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', monospace; 
+    line-height: 1.6;
+}
+
+html {
+    --primary-color: #015582;
+    --secondary-color: #E36D5A;
+    --orangey: #E36D5A;
+    --background-color: #FFFCF9; 
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+body {
+    padding: 0 40px 40px 40px; 
+    box-sizing: border-box;
+    color: var(--background-color);
+}
+
+li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 10px 20px; 
+    text-align: left; 
+}
+
+.hero-content {
+    max-width: 1000px; 
+    margin: auto;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto; 
+    max-width: 1000px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Project Details Section */
+.project-details {
+    text-align: left;
+    padding: 2rem 4rem; 
+}
+
+.details-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+    gap: 1rem;
+    justify-items: center;
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.detail-column {
+    background: #ffffff;
+    padding: 1.5rem;
+    width: 100%; 
+    max-width: 280px; 
+}
+
+.detail-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.detail-column p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Section Styling */
+.section-content {
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+
+pre code.hljs {
+    background-color: rgb(225, 245, 252);
+    border-radius: 10px;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto; 
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-bottom: -45px;
+    border-radius: 8px;
+}
+
+/* Solution Button */
+.solution-button {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+
+    width: 282px;
+    border-radius: 50vw;
+    padding: 5px 16px;
+    background-color: var(--orangey);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    height: fit-content;
+    width: 80vw;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px auto 20px;
+}
+
+.solution-button:hover {
+    background-color: #bb3824; 
+    transition: background-color 0.8s;
+}
+
+/* Style the iframe to make it responsive */
+iframe {
+    width: 39%;
+    max-width: 1200px;
+    height: 80vh;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: solid 5px var(--primary-color);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px; 
+    }
+
+    .project-details {
+        padding: 1rem; 
+    }
+
+    .details-container {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 0.5rem; 
+    }
+
+    .detail-column {
+        padding: 1rem;
+    }
+
+    .hero {
+        padding: 5px 10px; 
+    }
+
+    .section-content {
+        padding: 15px; 
+    }
+
+    .gallery {
+        gap: 10px; 
+    }
+
+    .hero-image, .gallery-image {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px; 
+    }
+
+    .project-details {
+        padding: 0.5rem; 
+    }
+
+    .details-container {
+        grid-template-columns: 1fr; /* Switches to a single-column layout */
+        gap: 0.25rem; 
+    }
+
+    .detail-column {
+        padding: 0.5rem; 
+    }
+
+    .hero {
+        padding: 5px; 
+    }
+
+    .section-content {
+        padding: 10px; 
+    }
+
+    .gallery {
+        gap: 5px; 
+    }
+}
