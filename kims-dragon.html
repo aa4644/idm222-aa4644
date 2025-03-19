@@ -12,10 +12,23 @@
 
 </head>
 <body>
+    <div class= "section-content">
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Amy Au</a>
+            <a href="about.html">About Me</a>
+            <a href="resume.html">Resume</a>
+            <a href="play.html">Play</a>
+            <a href="project.html">Projects</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
+
     <section class="hero">
         <div class="hero-content">
             <img src="images/kims-dragon/hero-image.svg" alt="Hero image of the final project" class="hero-image">
-            <h1>Kim's Dragon App Development</h1>
+            <h1 class="hero-title">Kim's Dragon App Development</h1>
             <p>A mobile ordering web app for Kim's Dragon</p>
         </div>
     </section>
@@ -69,7 +82,6 @@
             <div class="problem">
                 <h3>The Problem</h3>
                 <p>The absence of a mobile ordering system at Kim’s Dragon is the core issue this project sought to address. In a competitive environment with many food truck options nearby, it became essential for Kim’s Dragon to provide a way for customers to place orders digitally, without having to wait in long lines. This would not only cater to customers who are in a rush but would also improve the efficiency of the food truck’s operation by automating parts of the ordering process, reducing human error, and improving workflow.</p>
-                <img src="images/kims-dragon/user-persona.png" alt="User Persona" class="gallery-image">
             </div>
             <div class="goals">
                 <h3>Goals &amp; Objectives</h3>
@@ -86,12 +98,65 @@
     <section class="process">
         <div class="section-content">
             <h2>Process &amp; Insights: Beta to Final Build</h2>
+            <h3>Beginning the Project</h3>
+            <p>We started the project by reviewing the materials collected in IDM 216, Interaction Design I, where the initial concepts for this project were created. Using that information, we adjusted our user persona and journey map to better align with the objectives for the project's development. We also created a style guide to experiment with the site's color palette, typography, and overall branding.</p>
+            <picture>
+                <source media="(min-width: 1034px)" 
+                srcset="images/kims-dragon/user-persona.png">
+
+                <source media="(min-width: 700px)" 
+                srcset="images/kims-dragon/user-persona-tablet.png">
+
+                <img class="context-image" 
+                src="images/kims-dragon/user-persona-mobile.png" 
+                alt="Style Guide">
+            </picture>
+            <picture>
+                <source media="(min-width: 1034px)" 
+                srcset="images/kims-dragon/style-guide.png">
+
+                <source media="(min-width: 700px)" 
+                srcset="images/kims-dragon/style-guide.png">
+
+                <img class="context-image" 
+                src="images/kims-dragon/style-guide-mobile.png" 
+                alt="Style Guide">
+            </picture>
+            <img src="images/kims-dragon/journey-map.png" alt="Beta description image" class="context-image">
             <h3>Alpha: Begining the Development</h3>
-            <p>The Alpha phase involved refining the high-fidelity designs from IDM 215 (Interaction Design I), which had been created earlier and underwent one round of usability testing. During this phase, I developed a usability test script, conducted over five user interviews, and gathered valuable insights to inform the design. The team and I worked together to implement the initial front-end design using HTML and CSS. I focused specifically on creating components such as menus, buttons, forms, and navigation elements. This first iteration allowed us to get a feel for how the layout worked on mobile devices and desktops. <br>The Alpha build included fully stylized buttons, a basic menu system, and functional navigation between pages. As a secondary developer, I was responsible for building the microinteractions—things like smooth transitions for navigation, a functional counter button, and a loading bar. We used this early-stage prototype to test the core functionality and gauge user feedback.</p>
-            <img src="images/kims-dragon/alpha-image.svg" alt="Beta description image" class="gallery-image">
+            <p>The Alpha phase involved refining the high-fidelity designs from IDM 215 (Interaction Design I), which had been created earlier and underwent one round of usability testing. During this phase, I developed a usability test script, conducted over five user interviews, and gathered valuable insights to inform the design. The team and I worked together to implement the initial front-end design using HTML and CSS. I focused specifically on creating components such as menus, buttons, forms, and navigation elements. This first iteration allowed us to get a feel for how the layout worked on mobile devices and desktops.</p>
+            <br>
+            <p>The Alpha build included fully stylized buttons, a basic menu system, and functional navigation between pages. As a secondary developer, I was responsible for building the microinteractions—things like smooth transitions for navigation, a functional counter button, and a loading bar. We used this early-stage prototype to test the core functionality and gauge user feedback.</p>
+            <picture>
+                <source media="(min-width: 1034px)" 
+                srcset="images/kims-dragon/alpha-image.svg">
+
+                <source media="(min-width: 700px)" 
+                srcset="images/kims-dragon/alpha-image.svg">
+
+                <img class="gallery-image" 
+                src="images/kims-dragon/alpha-image-mobile.png" 
+                alt="Style Guide">
+            </picture>
+            <a href="https://digmstudents.westphal.drexel.edu/~ojk25/idm216/alpha" class="solution-button" target="_blank">View Alpha</a>
+
             <h3>Beta Description: Furthering the User Experience</h3>
-            <p>TFollowing the feedback received from the Alpha testing phase, we refined several aspects of the user interface. We also started integrating more dynamic features, including PHP for database integration. This allowed us to implement a cart system where users could add items from the menu, view item details, and calculate totals automatically based on selected items. <br>I contributed significantly to the development of features like the heart button (for saving favorite items), cleaning up CSS styles, and implementing the “Add Card Payment” feature. This feature allowed users to input and view their card information in real-time during checkout, which was a key step in moving the web application toward a fully functional e-commerce solution. With these changes in place, we moved to another round of usability testing, where we received positive feedback and gained further insights that helped us refine the product. </p>
-            <img src="images/kims-dragon/beta-image.svg" alt="Beta description image" class="gallery-image">
+            <p>Following the feedback received from the Alpha testing phase, we refined several aspects of the user interface. We also started integrating more dynamic features, including PHP for database integration. This allowed us to implement a cart system where users could add items from the menu, view item details, and calculate totals automatically based on selected items.</p> 
+            <br>
+            <p>I contributed to developing features like the heart button (for saving favorite items), cleaning up CSS styles, and implementing a workable “Add Card Payment” feature. This feature allowed users to input and view their card information in real-time during checkout, which was a key step in moving the web application toward a fully functional e-commerce solution. With these changes in place, we moved to another round of usability testing, where we received positive feedback and gained further insights that helped us refine the product. </p>
+            <picture>
+                <source media="(min-width: 1034px)" 
+                srcset="images/kims-dragon/beta-image.svg">
+
+                <source media="(min-width: 700px)" 
+                srcset="images/kims-dragon/beta-image.svg">
+
+                <img class="gallery-image" 
+                src="images/kims-dragon/beta-image-mobile.png" 
+                alt="Style Guide">
+            </picture>
+            <a href="https://digmstudents.westphal.drexel.edu/~ojk25/idm216/beta" class="solution-button" target="_blank">View Beta</a>
+
             <h3>Final: Finalizing the Product </h3>
             <p>The final version of the web application included a dynamic menu that displayed recipes with accompanying images and descriptions, all pulled from the database. Users could seamlessly browse the menu, add items to their cart, and complete the checkout process. The design was optimized for mobile devices and could be accessed easily from a smartphone or tablet. The final product was a fully responsive, mobile-friendly web app that supported secure transactions and provided a smooth, user-centered experience. The integration of PHP and JavaScript allowed for dynamic updates to the cart, real-time display of item totals, and a confirmation screen with order details upon successful checkout.</p>
         </div>
@@ -118,7 +183,7 @@
                 </li>
             </ul>
             <iframe src="https://digmstudents.westphal.drexel.edu/~ojk25/idm216/final/" frameborder="0"></iframe>
-            <a href="final/build.html" class="solution-button">View Final Build</a>
+            <a href="https://digmstudents.westphal.drexel.edu/~ojk25/idm216/final/" class="solution-button" target="_blank">View Final Build</a>
         </div>
     </section>
 
@@ -127,10 +192,12 @@
             <h2>Takeaways</h2>
             <p>This project was a comprehensive learning experience, providing insights into the entire design and development process. Working in a team environment with designated roles helped us collaborate effectively and produce a successful outcome. The iterative process of testing and refining our design based on user feedback was crucial to creating a product that met both user needs and technical requirements. From a personal perspective, my involvement as a secondary developer and tertiary designer allowed me to deepen my knowledge of front-end development, microinteractions, and usability testing, all of which were critical in delivering a polished final product. Most importantly, the project emphasized the importance of balancing user needs with technical limitations and business objectives, an essential skill for any interaction designer.</p>
         </div>
+        <a href="https://github.com/OliviaKnestaut/2501-idm216-blueprints" class="solution-button" target="_blank">View GitHub</a>
     </section>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="javascript/general.js"></script>
 
     <script>hljs.highlightAll();</script>
 </body>
